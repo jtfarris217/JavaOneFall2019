@@ -1,0 +1,41 @@
+
+package vehicle;
+
+
+public class Vehicle {
+
+
+    public static void main(String[] args) {
+        
+        Car car = new Car();
+        Motorcycle motorcycle = new Motorcycle();
+        MountainBike mountainBike = new MountainBike();
+        RoadBike roadBike = new RoadBike();
+        
+        
+        car.accelerate();
+        car.brake();
+        car.brake();
+        car.printCurrentSpeed();
+        motorcycle.attachSidecar();
+        motorcycle.attachSidecar();
+        
+        for (int i = 0; i < 22; i++) {
+            car.accelerate();
+        }
+        
+        car.printCurrentSpeed();
+        
+        car.addPassenger();
+        car.addPassenger();
+        car.removePassenger();
+        System.out.println(car.getCurrentPassengers());
+        
+        roadBike.accelerate();
+        roadBike.printCurrentSpeed();
+        
+    }
+    
+
+    
+}
